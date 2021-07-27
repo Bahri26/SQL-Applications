@@ -129,3 +129,15 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` `COUNT`(Title) `FROM` film `WHERE` TITLE `LIKE` 'T%' `AND` rating = 'G'
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim15.PNG)
+
+### Örnek 16: country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
+
+* `SELECT` `COUNT`(country) `FROM` country `WHERE` country `LENGTH`(country) = 5
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim16.PNG)
+
+### Örnek 17: city tablosundaki şehir isimlerinin kaçtanesi 'R' veya r karakteri ile biter?
+
+* `SELECT` `COUNT`(CITY) `FROM` CITY `WHERE` CITY `LIKE` '%R' `OR` CITY `LIKE` '%r'
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim17.PNG)
