@@ -67,3 +67,9 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` first_name,last_name `FROM` actor `WHERE` first_name `IN`('Penelope','Nick','Ed')
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim6.PNG)![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim7.PNG)
+
+### Örnek 8: ilm tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99 VE replacement_cost 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız.
+
+* `SELECT` * `FROM` film `WHERE` rental_rate IN(0.99, 2.99, 4.99) `AND` replacement_cost `IN`(12.99, 15.99, 28.99)
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim8.PNG)![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim8-1.PNG)
