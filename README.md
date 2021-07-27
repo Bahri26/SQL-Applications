@@ -123,3 +123,9 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` `COUNT`(`DISTINCT` replacement_cost) `FROM` film
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim14.PNG)
+
+### Örnek 15: film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
+
+* `SELECT` `COUNT`(Title) `FROM` film `WHERE` TITLE `LIKE` 'T%' `AND` rating = 'G'
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim15.PNG)
