@@ -73,3 +73,13 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` * `FROM` film `WHERE` rental_rate IN(0.99, 2.99, 4.99) `AND` replacement_cost `IN`(12.99, 15.99, 28.99)
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim8.PNG)![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim8-1.PNG)
+
+## LIKE : WHERE şart ifadesinin içinde filtreleme yani benzer ifadelerinin sonuçlarını getirmek istediğimiz zamana kullanırız. ILIKE operatörü LIKE operatörünün case - insensitive versiyonudur. Kullanılan % karakteri sıfır, bir veya daha fazla karakteri temsil eder ve Wildcard olarak isimlendirilir. Bir diğer wildcard karakteri _ karakteridir ve bir karekteri temsil eder.
+
+* `SELECT` * `FROM` table_name `WHERE` column_name `LIKE` sablon
+
+### Örnek 9: country tablosunda bulunan country sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
+
+* `SELECT` country `FROM` country `WHERE` country `LIKE` 'A%%a'
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim9.PNG)
