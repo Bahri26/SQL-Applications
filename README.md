@@ -83,3 +83,21 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` country `FROM` country `WHERE` country `LIKE` 'A%%a'
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim9.PNG)
+
+### Örnek 10: country tablosunda bulunan country sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
+
+* `SELECT` country `FROM` country `WHERE` length(country)>6 `AND` country `LIKE` '%n'
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim10.PNG)
+
+### Örnek 11: film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız.
+
+* `SELECT` title `FROM` film `WHERE` title `LIKE` '%__T_%'
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim11.PNG)
+
+### Örnek 12: film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
+
+* `SELECT` * `FROM` film `WHERE` title `LIKE` 'C%' `AND` `length`(title)>90 `AND` rental_rate=2.99
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim12.PNG)
