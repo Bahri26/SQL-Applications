@@ -118,4 +118,8 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim13.PNG)
 
+### Örnek 14: film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
 
+* `SELECT` `COUNT`(`DISTINCT` replacement_cost) `FROM` film
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim14.PNG)
