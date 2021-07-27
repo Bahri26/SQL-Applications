@@ -101,3 +101,21 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` * `FROM` film `WHERE` title `LIKE` 'C%' `AND` `length`(title)>90 `AND` rental_rate=2.99
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim12.PNG)
+
+## DISTINCT : Tablodaki eşsiz satırları getirmeye yarar.
+
+*  `SELECT` `DISTINCT` column_name `FROM` table_name
+
+## COUNT : Tablodaki verileri saymak için kullanılır.
+
+* `SELECT` `COUNT(*)` column_name `FROM` table_name 
+* `SELECT` `COUNT(*)` column_name `FROM` table_name `WHERE` condition
+* `SELECT` `COUNT(column_name)` column_name `FROM` table_name `WHERE` condition
+
+### Örnek 13: film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
+
+* `SELECT` `DISTINCT` replacement_cost `FROM` film
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim13.PNG)
+
+
