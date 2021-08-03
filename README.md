@@ -186,3 +186,8 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` `MAX`(LENGTH) `FROM` FILM `Where` rental_rate= 0.99
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim23.PNG)
+
+### Örnek 24: film tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
+* `SELECT` `COUNT`(`DISTINCT` replacement_cost) `FROM` FILM `Where` LENGTH > 150
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim24.PNG)
