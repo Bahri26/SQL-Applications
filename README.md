@@ -181,3 +181,8 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` `COUNT`(rental_rate) `FROM` FILM `Where` title `LIKE` 'C%'
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim22.PNG)
+
+### Örnek 23: film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
+* `SELECT` `MAX`(LENGTH) `FROM` FILM `Where` rental_rate= 0.99
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim23.PNG)
