@@ -148,8 +148,15 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * ASC : Verilerimizi A-Z sıralama yapar yani artağan bir şekilde sıralar.
 * DESC : Verilerimizi Z-A sıralama yapar yani azalan bir şekilde sıralar.
 * Order By ifadesinin varsayılan değeri `ASC` kullanımıdır.
+* Limit : Verilerimizin sayısını sınırlamak için kullanılır. 
+* Offset : Bazı veri grubunun pas geçilmesi için kullanılır.
 
 ### Örnek 18: film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
 * `SELECT` title `FROM` FILM `WHERE` TITLE `LIKE` '%n' `ORDER BY` LENGTH DESC LIMIT 5 ;
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim18.PNG)
+
+### Örnek 19: film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci 5 filmi sıralayınız.
+* `SELECT` title `FROM` FILM `WHERE` TITLE `LIKE` '%n' `ORDER BY` LENGTH ASC OFFSET 5 LIMIT 5 ;
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim19.PNG)
