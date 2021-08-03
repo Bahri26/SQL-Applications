@@ -14,7 +14,7 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 5. [ ALT SORGULAR ](#item5)
 6. [ CODERBYTE CHALLENGE ](#item6)
 
-<a name="item1"></a>
+<a name="item1">SQL TEMELLERİ - I</a>
 ## **SELECT**: Veritabanından verileri çekmek için kullanılır.
 * `SELECT` * `FROM` table_name;
 
@@ -142,7 +142,7 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim17.PNG)
 
-<a name="item2"></a>
+<a name="item2">SQL TEMELLERİ - II</a>
 ## `ORDER BY` : Verilerimizi herhangi bir sütunda bulunan değerlere göre azalan veya artan bir şekilde sıralayabiliriz.
 * `SELECT` * `FROM` table_name `ORDER BY` ASC/DESC ;
 * ASC : Verilerimizi A-Z sıralama yapar yani artağan bir şekilde sıralar.
@@ -165,3 +165,14 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` * `FROM` CUSTOMER `Where` store_id = 1 `Order By` last_name `DESC` `Limit` 4
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim20.PNG)![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim20-1.PNG)
+
+## `Aggregate Fonksiyonlar`: Veri kümelerimizden tek sonuçlar çıkarabilmek için kullanılır.
+* `AVG`: sayısal değerlerden oluşan sütunun ortalama değerini alırız.
+* `SUM`: sayısal değerlerden oluşan sütunun toplam değerini alırız.
+* `MAX`: sayısal değerlerden oluşan sütunun en yüksek değerini alırız.
+* `MIN`: sayısal değerlerden oluşan sütunun en KÜÇÜK değerini alırız.
+
+### Örnek 21: film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+* `SELECT` `AVG`(rental_rate) `FROM` FILM
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim21.PNG)
