@@ -157,6 +157,11 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim18.PNG)
 
 ### Örnek 19: film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci 5 filmi sıralayınız.
-* `SELECT` title `FROM` FILM `WHERE` TITLE `LIKE` '%n' `ORDER BY` LENGTH ASC OFFSET 5 LIMIT 5 ;
+* `SELECT` title `FROM` FILM `WHERE` TITLE `LIKE` '%n' `ORDER BY` LENGTH `ASC` `Offset` 5 `Limit` 5 ;
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim19.PNG)
+
+### Örnek 20: customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.
+* `SELECT` * `FROM` CUSTOMER `Where` store_id = 1 `Order By` last_name `DESC` `Limit` 4
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim20.PNG)![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim20-1.PNG)
