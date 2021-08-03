@@ -176,3 +176,8 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` `AVG`(rental_rate) `FROM` FILM
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim21.PNG)
+
+### Örnek 22: film tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar?
+* `SELECT` `COUNT`(rental_rate) `FROM` FILM `Where` title `LIKE` 'C%'
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim22.PNG)
