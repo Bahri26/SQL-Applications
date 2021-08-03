@@ -141,3 +141,15 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` `COUNT`(CITY) `FROM` CITY `WHERE` CITY `LIKE` '%R' `OR` CITY `LIKE` '%r'
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim17.PNG)
+
+<a name="item2"></a>
+## `ORDER BY` : Verilerimizi herhangi bir sütunda bulunan değerlere göre azalan veya artan bir şekilde sıralayabiliriz.
+* `SELECT` * `FROM` table_name `ORDER BY` ASC/DESC ;
+* ASC : Verilerimizi A-Z sıralama yapar yani artağan bir şekilde sıralar.
+* DESC : Verilerimizi Z-A sıralama yapar yani azalan bir şekilde sıralar.
+* Order By ifadesinin varsayılan değeri `ASC` kullanımıdır.
+
+### Örnek 18: film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
+* `SELECT` title `FROM` FILM `WHERE` TITLE `LIKE` '%n' `ORDER BY` LENGTH DESC LIMIT 5 ;
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim18.PNG)
