@@ -215,3 +215,51 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` country_id,COUNT(country_id) `FROM` CITY `Group By` country_id `ORDER BY` COUNT(country_id) `DESC` LIMIT 1
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim28.PNG)
+
+<a name="item3">TABLOLARLA ÇALIŞMAK</a>
+## CREATE TABLE: Veritabanında tablo oluşturmak için kullanılan SQL ifadesidir.
+CREATE TABLE table_name (
+  column_name1 type_name1 constraint_name1,
+  column_name2 type_name2 constraint_name2,
+  ....
+);
+
+CREATE TABLE author (
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  email VARCHAR(100)
+  birthday DATE
+);
+
+## DROP TABLE: Veritabanında tablo silmek için kullanılır.
+DROP TABLE (IF EXISTS) table_name;
+
+DROP TABLE IF EXISTS test;
+
+## Update: Veritabanı sütunlarındaki verileri değiştirmek için kullanabiliriz.
+UPDATE table_name SET column_name = value,..... Where condition
+
+UPDATE my_apps
+SET name = 'Mayak',
+	price = '$5.22'
+WHERE id = 2;
+
+## Insert Into: Veritabanı sütunlarına veri eklemek için kullanılır.
+INSERT INTO tbale_name (column_name) | empty (values)
+
+INSERT INTO my_apps (id, name, price) values (1, 'Ronstring', '$0.96');
+INSERT INTO my_apps (id, name, price) values (2, 'Duobam', '$3.44');
+INSERT INTO my_apps (id, name, price) values (3, 'Tresom', '$2.21');
+INSERT INTO my_apps (id, name, price) values (4, 'Redhold', '$2.52');
+INSERT INTO my_apps (id, name, price) values (5, 'Y-find', '$9.14');
+
+## Delete: Veritabanından koşula göre veritabanından değer silmek için kullanılır.
+DELETE FROM table_name Where condition
+
+DELETE FROM my_apps
+WHERE name = 'Tresom';
+
+
+
+
