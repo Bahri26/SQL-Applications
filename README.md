@@ -191,3 +191,27 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 * `SELECT` `COUNT`(`DISTINCT` replacement_cost) `FROM` FILM `Where` LENGTH > 150
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim24.PNG)
+
+## `Group By`: Birden fazla sütunları gruplama yapmak ve kümeleme fonksiyonları kullanmak için ihtiyaç duyarız.
+* `SELECT` grouped_column| grouped_columns `FROM` table_name `Group By` grouped_column| grouped_columns
+* `Having` : `Group By` ile kullanılan gruplanmış sütunlar üzerinde aggregate fonksiyonları kullanabildiğimiz ifadedir.
+
+### Örnek 25: film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
+* `SELECT` RATING `FROM` FILM `Group By` RATING
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim25.PNG)
+
+### Örnek 26: film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
+* `SELECT` replacement_cost,COUNT(FILM) `FROM` FILM `Group By` replacement_cost `HAVING` COUNT(FILM)
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim26.PNG)
+
+### Örnek 27: customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir?
+* `SELECT` store_id,COUNT(customer_id) `FROM` CUSTOMER `Group By` store_id
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim27.PNG)
+
+### Örnek 28: city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıra country_id bilgisini ve şehir sayısını paylaşınız.
+* `SELECT` country_id,COUNT(country_id) `FROM` CITY `Group By` country_id `ORDER BY` COUNT(country_id) `DESC` LIMIT 1
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim28.PNG)
