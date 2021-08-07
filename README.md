@@ -289,14 +289,14 @@ WHERE name = 'Tresom';
 
 ## Veri Tipleri - I
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/veri-tipleri.PNG)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/veri-tipleri.png)!
 
 ## Veri Tipleri - II
 
 ### Karakter Veri Tipleri
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/character_type.PNG)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/character_type.png)!
 
 ### Tarih ve Zaman Tipleri
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/date-time.PNG)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/date-time.png)!
