@@ -275,3 +275,28 @@ WHERE name = 'Tresom';
 ### Örnek 32: Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim33.PNG)!
+
+## Primary Key(Birincil Anahtar): bir tabloda bulunan veri sıralarını birbirinden ayırmamızı sağlayan bir kısıtlama (constraint) yapısıdır. O tabloda bulunan veri sıralarına ait bir "benzersiz tanımlayıcıdır".
+
+*  Benzersiz (Unique) olmalıdır.
+*  NULL değerine sahip olamaz.
+*  Bir tabloda en fazla 1 tane bulunur
+
+## FOREIGN KEY: bir tabloda bulunan herhangi bir sütundaki verilerin genelde başka bir tablo sütununa referans vermesi durumudur, tablolar arası ilişki kurulmasını sağlar.
+
+* Bir tabloda birden fazla sütun FK olarak tanımlanabilir.
+* Aynı sütunun içerisinde aynı değerler bulunabilir.
+
+## Veri Tipleri - I
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/veri-tipleri.PNG)!
+
+## Veri Tipleri - II
+
+### Karakter Veri Tipleri
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/character_type.PNG)!
+
+### Tarih ve Zaman Tipleri
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/date-time.PNG)!
