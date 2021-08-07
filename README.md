@@ -260,6 +260,18 @@ DELETE FROM table_name Where condition
 DELETE FROM my_apps
 WHERE name = 'Tresom';
 
+### Örnek 29: test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
 
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim30.PNG)
 
+### Örnek 30: Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim31.PNG)![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim31-1.PNG)
+
+### Örnek 31: Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim32.PNG)!
+
+### Örnek 32: Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim33.PNG)!
