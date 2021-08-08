@@ -327,3 +327,22 @@ WHERE name = 'Tresom';
 * SELECT first_name,last_name FROM CUSTOMER INNER JOIN RENTAL ON CUSTOMER.customer_id = RENTAL.customer_id LIMIT 10
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim36.PNG)!
+
+## LEFT JOIN: yapısındaki tablo birleştirmesinde, birleştirme işlemi tablo 1 (soldaki tablo) üzerinden gerçekleştirilir. Tablo 2 null değer bile olsa her ne olursa olsun değerler getirilir. 
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/LeftJoin.png)!
+
+`SELECT` column_name `FROM` table_1 `LEFT JOIN` table_2 `ON` table_1.column_name = table_2.column_name
+
+## RIGHT JOIN: RIGHT JOIN yapısındaki tablo birleştirmesinde, birleştirme işlemi tablo 2 (sağdaki tablo) üzerinden gerçekleştirilir. Tablo 1 null değer bile olsa her ne olursa olsun değerler getirilir. 
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/RightJoin.png)!
+
+`SELECT` column_name `FROM` table_1 `RIGHT JOIN` table_2 `ON` table_1.column_name = table_2.column_name
+
+## FULL JOIN : LEFT JOIN yapısındaki tablo birleştirmesinde, birleştirme işlemi her iki tablo üzerinden gerçekleştirilir. Fakat kesişen değerler ile tablo1 ve tablo2 özgü değerler de getirilir.
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/FullJoin.gift)!
+
+`SELECT` column_name `FROM` table_1 `FULL JOIN` table_2 `ON` table_1.column_name = table_2.column_name
+
