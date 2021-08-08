@@ -314,16 +314,16 @@ WHERE name = 'Tresom';
 
 * SELECT city,country FROM CITY INNER JOIN COUNTRY ON CITY.country_id = COUNTRY.country_id LIMIT 10
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim34.png)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim34.PNG)!
 
 ### Örnek 34: customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
 
 * SELECT first_name,last_name FROM CUSTOMER INNER JOIN PAYMENT ON CUSTOMER.customer_id = PAYMENT.customer_id LIMIT 10
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim35.png)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim35.PNG)!
 
 ### Örnek 35: customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
 
 * SELECT first_name,last_name FROM CUSTOMER INNER JOIN RENTAL ON CUSTOMER.customer_id = RENTAL.customer_id LIMIT 10
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim36.png)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim36.PNG)!
