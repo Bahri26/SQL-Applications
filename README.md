@@ -12,7 +12,6 @@ Buradan repository indirebilirsiniz ve kendiniz uygulamaları yapabilirsiniz.
 3. [ TABLOLARLA ÇALIŞMAK ](#item3)
 4. [ JOIN YAPILARI ](#item4)
 5. [ ALT SORGULAR ](#item5)
-6. [ CODERBYTE CHALLENGE ](#item6)
 
 <a name="item1">SQL TEMELLERİ - I</a>
 ## **SELECT**: Veritabanından verileri çekmek için kullanılır.
@@ -418,4 +417,44 @@ WHERE name = 'Tresom';
 
 * SELECT * FROM customer WHERE customer_id IN (SELECT customer_id FROM payment WHERE amount = (SELECT max(amount) from payment))
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim43.PNG)!![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim43-1.PNG)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim43.PNG)! ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim43-1.PNG)!
+
+## Alt Sorgular ve Join Kullanımı
+
+### Örnek42: bookstore veri tabanında kitap sayfası sayısı ortalama kitap sayfası sayısından fazla olan kitapların isimlerini, bu kitapların yazarlarına ait isim ve soyisim bilgileriyle birlikte sıralayınız.
+
+* SELECT author.first_name, author.last_name, book.title
+* FROM author
+* INNER JOIN book ON book.author_id = author.id
+* WHERE page_number >
+* (
+* SELECT AVG(page_number) FROM book
+* );
+
+### Örnek43: film tablosundan 'K' karakteri ile başlayan en uzun ve replacenet_cost u en düşük 4 filmi sıralayınız.
+
+* SELECT TITLE FROM FILM WHERE TITLE LIKE 'K%' ORDER BY LENGTH(TITLE) DESC,replacement_cost ASC LIMIT 4
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim44.PNG)!
+
+### Örnek44: film tablosunda içerisinden en fazla sayıda film bulunduran rating kategorisi hangisidir?
+
+* SELECT rating,count(rating) FROM FILM GROUP BY rating ORDER BY count(rating) LIMIT 1
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim45.PNG)!
+
+### Örnek45: cutomer tablosunda en çok alışveriş yapan müşterinin adı nedir?
+
+* SELECT first_name FROM customer WHERE customer_id IN (SELECT customer_id FROM payment WHERE amount = (SELECT max(amount) from payment)) LIMIT 1
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim46.PNG)!
+
+### Örnek46: category tablosundan kategori isimlerini ve kategori başına düşen film sayılarını sıralayınız.
+
+* SELECT CATEGORY.NAME,COUNT(CATEGORY.category_id) FROM FILM_CATEGORY 
+* INNER JOIN CATEGORY 
+* ON FILM_CATEGORY.category_id = CATEGORY.category_id
+* GROUP BY CATEGORY.NAME
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim47.PNG)!
+
