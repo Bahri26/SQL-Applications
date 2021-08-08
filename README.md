@@ -342,7 +342,7 @@ WHERE name = 'Tresom';
 
 ## FULL JOIN : LEFT JOIN yapısındaki tablo birleştirmesinde, birleştirme işlemi her iki tablo üzerinden gerçekleştirilir. Fakat kesişen değerler ile tablo1 ve tablo2 özgü değerler de getirilir.
 
-![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/FullJoin.gift)!
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/FullJoin.png)!
 
 `SELECT` column_name `FROM` table_1 `FULL JOIN` table_2 `ON` table_1.column_name = table_2.column_name
 
