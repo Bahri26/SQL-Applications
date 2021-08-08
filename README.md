@@ -364,3 +364,58 @@ WHERE name = 'Tresom';
 
 ![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim39.PNG)!
 
+<a name="item5">ALT SORGULAR</a>
+-- Bir sorgu içerisinde, o sorgunun ihtiyaç duyduğu veri veya verileri getiren sorgulardır.
+
+### Örnek40: bookstore veritabanında "Gülün Adı" isimli kitabımızın sayfa sayısı 466 dır. Bu kitaptan daha fazla sayıda sayfası bulunan kitapları aşağıdaki sorgu yardımıyla ve 466 rakamını aşağıdaki sorgu yardımıyla bulabiliriz.
+
+* SELECT * FROM book WHERE page_number > 466;
+* SELECT page_number FROM book  WHERE title = 'Gülün Adı'
+
+* SELECT * FROM book WHERE page_number > ( SELECT page_number FROM book WHERE title = 'Gülün Adı' );
+
+## Any Operatörü: Alt sorgudan gelen herhangi bir değer koşulu sağlaması durumunda TRUE olarak ilgili değerin koşu sağlamasını sağlar. 
+
+* SELECT first_name, last_name
+* FROM author
+* WHERE id = ANY
+* (
+* SELECT id
+* FROM book
+* WHERE title = 'Abe Lincoln in Illinois' OR title = 'Saving Shiloh'
+* );
+
+## All Operatörü: Alt sorgudan gelen tüm değerlerin koşulu sağlaması durumunda TRUE olarak döner.
+
+* SELECT first_name, last_name
+* FROM author
+* WHERE id = ALL
+* (
+* SELECT id
+* FROM book
+* WHERE title = 'Abe Lincoln in Illinois' OR title = 'Saving Shiloh'
+* );
+
+### Örnek39: film tablosunda film uzunluğu length sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
+
+* SELECT COUNT(*) AS FILIMSAYISI FROM FILM WHERE LENGTH > (SELECT ROUND(AVG(LENGTH)) FROM FILM)
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim40.PNG)!
+
+### Örnek40: film tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır?
+
+* SELECT COUNT(*) AS filmSayısı FROM film WHERE rental_rate = (SELECT MAX(rental_rate) FROM FILM)
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim41.PNG)!
+
+### Örnek41: film tablosunda en düşük rental_rate ve en düşün replacement_cost değerlerine sahip filmleri sıralayınız.
+
+* SELECT title FROM film WHERE rental_rate = (SELECT MIN(rental_rate) FROM FILM) AND replacement_cost = (SELECT MIN(replacement_cost) FROM FILM) LIMIT 10
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim42.PNG)!
+
+### Örnek42: payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
+
+* SELECT * FROM customer WHERE customer_id IN (SELECT customer_id FROM payment WHERE amount = (SELECT max(amount) from payment))
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim43.PNG)!![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim43-1.PNG)!
