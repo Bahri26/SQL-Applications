@@ -346,3 +346,21 @@ WHERE name = 'Tresom';
 
 `SELECT` column_name `FROM` table_1 `FULL JOIN` table_2 `ON` table_1.column_name = table_2.column_name
 
+### Örnek36: city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.
+
+* SELECT city,country FROM CITY LEFT JOIN COUNTRY ON CITY.country_id = COUNTRY.country_id LIMIT 10
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim37.PNG)!
+
+ ### Örnek37: customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız.
+ 
+* SELECT first_name,last_name FROM CUSTOMER RIGHT JOIN PAYMENT ON CUSTOMER.customer_id = PAYMENT.customer_id LIMIT 10
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim38.PNG)!
+
+### Örnek38: customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız.
+
+* SELECT first_name,last_name FROM CUSTOMER FULL JOIN RENTAL ON CUSTOMER.customer_id = RENTAL.customer_id LIMIT 10
+
+![alt text](https://github.com/Bahri26/SQL-Applications/blob/main/Results/resim39.PNG)!
+
